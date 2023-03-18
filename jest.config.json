@@ -1,0 +1,36 @@
+{
+  "collectCoverage": false,
+  "coverageReporters": [
+    [
+      "json",
+      {
+        "file": "json.json"
+      }
+    ],
+    [
+      "json-summary",
+      {
+        "file": "json-summary.json"
+      }
+    ],
+    [
+      "text",
+      {
+        "file": "text.txt"
+      }
+    ],
+    [
+      "text-summary",
+      {
+        "file": "text-summary.txt"
+      }
+    ],
+    "text"
+  ],
+  "collectCoverageFrom": ["./src/calculator/**"],
+  "coverageThreshold": {
+    "global": {
+      "lines": 90
+    }
+  }
+}
