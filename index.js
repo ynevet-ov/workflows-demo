@@ -68,6 +68,7 @@ async function checkFileStartsWithHeader(filePath) {
       core.info("finnuhs");
     }
   } catch (error) {
+    core.info("error ??");
     core.setFailed(error.message);
   }
 })();
