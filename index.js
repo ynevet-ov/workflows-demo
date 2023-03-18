@@ -38,7 +38,7 @@ async function checkFileStartsWithHeader(filePath) {
     checkFileExistence("LICENSE");
     if (!(await checkFileStartsWithHeader("README.md"))) {
       // get token for octokit
-      const token = core.getInput("TOKEN");
+      const token = core.getInput("token");
       const octokit = new github.getOctokit(token);
 
       // call octokit to create a check with annotation and details
