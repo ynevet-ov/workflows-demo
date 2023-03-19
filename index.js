@@ -65,7 +65,7 @@ async function checkFileStartsWithHeader(filePath) {
           ],
         },
       });
-      core.info(check);
+      core.info(JSON.stringify(check));
     }
   } catch (error) {
     core.setFailed(error.message);
