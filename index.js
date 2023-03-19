@@ -62,6 +62,15 @@ async function checkFileStartsWithHeader(filePath) {
               start_column: 1,
               end_column: 1,
             },
+            {
+              path: "test.js",
+              start_line: 2,
+              end_line: 4,
+              annotation_level: "failure",
+              message: "Uncovered lines",
+              start_column: 1,
+              end_column: 4,
+            },
           ],
         },
       });
