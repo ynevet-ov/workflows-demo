@@ -42,7 +42,7 @@ async function checkFileStartsWithHeader(filePath) {
       const octokit = new github.getOctokit(token);
 
       // call octokit to create a check with annotation and details
-      await octokit.rest.checks.create({
+      const check = await octokit.rest.checks.create({
         owner: github.context.repo.owner,
         repo: github.context.repo.repo,
         name: "Readme Validator",
@@ -65,10 +65,9 @@ async function checkFileStartsWithHeader(filePath) {
           ],
         },
       });
-      core.info("finnuhs");
+      core.info(check);
     }
   } catch (error) {
-    core.info("error ??");
     core.setFailed(error.message);
   }
 })();
