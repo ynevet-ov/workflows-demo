@@ -54,11 +54,11 @@ async function checkFileStartsWithHeader(filePath) {
           summary: "Please use markdown syntax to create a title",
           annotations: [
             {
-              path: "README.md",
-              start_line: 1,
-              end_line: 1,
+              path: "test.js",
+              start_line: 2,
+              end_line: 4,
               annotation_level: "failure",
-              message: "README.md must start with a header",
+              message: "Uncovered lines",
               start_column: 1,
               end_column: 1,
             },
