@@ -69,7 +69,7 @@ async function checkFileStartsWithHeader(filePath) {
               annotation_level: "failure",
               message: "Uncovered lines",
               start_column: 1,
-              end_column: 4,
+              end_column: 1,
             },
           ],
         },
